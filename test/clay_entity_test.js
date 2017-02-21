@@ -24,6 +24,8 @@ describe('clay-entity', function () {
       foo: 'bar'
     })
     assert.deepEqual(Object.keys(entity).sort(), [ 'foo', 'id' ])
+
+    assert.ok(String(entity))
   }))
 })
 
