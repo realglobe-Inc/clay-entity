@@ -1,0 +1,50 @@
+{
+  "classes": [
+    {
+      "name": "ClayEntity",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "ClayEntity",
+        "description": "Entity class for ClayDB",
+        "parameters": [
+          {
+            "name": "attributes",
+            "type": "Object",
+            "description": "Attributes",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
+        "examples": []
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a ClayEntity instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "ClayEntity",
+        "description": ""
+      }
+    }
+  ]
+}

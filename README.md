@@ -76,6 +76,12 @@ Usage
 
 const clayEntity = require('clay-entity')
 
+{
+  let entity01 = clayEntity({
+    title: 'Wonderful Banana'
+  })
+  console.log(entity01)
+}
 ```
 
 
@@ -88,89 +94,46 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-id@1.0.0
+# clay-entity@1.0.0
 
-Id generator for ClayDB
+Entity class for ClayDB
 
 + Functions
-  + [create(args)](#clay-id-function-create)
-  + [newIdString()](#clay-id-function-new-id-string)
-  + [fromJSON(value)](#clay-id-function-from-j-s-o-n)
-+ [ClayId](clay-id-classes) Class
-  + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
-  + [id.is(id)](#clay-id-classes-clay-id-is)
-  + [id.toString()](#clay-id-classes-clay-id-toString)
-  + [id.toJSON()](#clay-id-classes-clay-id-toJSON)
+  + [create(args)](#clay-entity-function-create)
++ [ClayEntity](clay-entity-classes) Class
+  + [new ClayEntity(attributes)](#clay-entity-classes-clay-entity-constructor)
 
 ## Functions
 
-<a class='md-heading-link' name="clay-id-function-create" ></a>
+<a class='md-heading-link' name="clay-entity-function-create" ></a>
 
-### create(args) -> `ClayId`
+### create(args) -> `ClayEntity`
 
-Create a ClayId instance
+Create a ClayEntity instance
 
 | Param | Type | Description |
 | ----- | --- | -------- |
 | args | * |  |
 
-<a class='md-heading-link' name="clay-id-function-new-id-string" ></a>
-
-### newIdString() -> `string`
-
-Generate a new id string
-<a class='md-heading-link' name="clay-id-function-from-j-s-o-n" ></a>
-
-### fromJSON(value) -> `ClayId`
-
-Create instance from json
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| value | string,Object |  |
 
 
+<a class='md-heading-link' name="clay-entity-classes"></a>
 
-<a class='md-heading-link' name="clay-id-classes"></a>
+## ClayEntity Class
 
-## ClayId Class
-
-Id generator
+Entity class for ClayDB
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
+<a class='md-heading-link' name="clay-entity-classes-clay-entity-constructor" ></a>
 
-### new ClayId(id)
+### new ClayEntity(attributes)
 
-Constructor of ClayId class
+Constructor of ClayEntity class
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| id | string |  |
+| attributes | Object | Attributes |
 
-
-<a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>
-
-### id.is(id) -> `boolean`
-
-Compare to another id
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| id | string,ClayId |  |
-
-
-<a class='md-heading-link' name="clay-id-classes-clay-id-toString" ></a>
-
-### id.toString() -> `string`
-
-Convert to string
-
-<a class='md-heading-link' name="clay-id-classes-clay-id-toJSON" ></a>
-
-### id.toJSON() -> `string`
-
-Convert to json (Called from JSON.stringify)
 
 
 

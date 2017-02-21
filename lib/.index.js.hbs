@@ -1,0 +1,18 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ */
+
+'use strict'
+
+const create = require('./create')
+const ClayEntity = require('./clay_entity')
+
+let lib = create.bind(this)
+
+Object.assign(lib, ClayEntity, {
+  create,
+  ClayEntity
+})
+
+module.exports = lib
