@@ -26,7 +26,6 @@
     "clay-id": "^1.0.1"
   },
   "devDependencies": {
-    "co": "^4.6.0",
     "ababel": "^2.0.1",
     "ababel-es2015": "^2.0.1",
     "amocha": "^2.0.0",
@@ -35,8 +34,10 @@
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.1.0",
+    "co": "^4.6.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
+    "sg-templates": "^1.2.5",
     "sugos-travis": "^2.0.7",
     "writeout": "^2.1.0"
   },
