@@ -30,22 +30,18 @@ module.exports = {
         [item.name]: wrapper(item)
       }), {})
       let classes = byName(jsdoc[ 'classes' ], { wrapper: asClass })
-      let { ClayId } = classes
+      let { ClayEntity } = classes
 
       let functions = byName(jsdoc[ 'functions' ], { wrapper: asFunc })
       let {
-        create,
-        newIdString,
-        fromJSON
+        create
       } = functions
       return {
         classes: [
-          ClayId
+          ClayEntity
         ].filter(Boolean),
         functions: [
-          create,
-          newIdString,
-          fromJSON
+          create
 
         ].filter(Boolean)
       }
