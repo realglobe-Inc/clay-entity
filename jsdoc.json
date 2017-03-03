@@ -21,10 +21,133 @@
           }
         ],
         "examples": []
-      }
+      },
+      "functions": [
+        {
+          "name": "get",
+          "access": "",
+          "virtual": false,
+          "description": "Get entity attribute.",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name of attribute",
+              "default": "",
+              "optional": "",
+              "nullable": true
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "*",
+            "description": "values"
+          }
+        }
+      ]
     }
   ],
   "functions": [
+    {
+      "name": "set",
+      "access": "",
+      "virtual": false,
+      "description": "Set values",
+      "parameters": [
+        {
+          "name": "attributes",
+          "type": "Object",
+          "description": "Attributes to set",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "set",
+      "access": "",
+      "virtual": false,
+      "description": "Get values",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Name of attribute to set",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        },
+        {
+          "name": "value",
+          "type": "*",
+          "description": "Value to set",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "at",
+      "access": "",
+      "virtual": false,
+      "description": "Get $$at attribute",
+      "parameters": [],
+      "examples": [],
+      "returns": {
+        "type": "Date",
+        "description": ""
+      }
+    },
+    {
+      "name": "at",
+      "access": "",
+      "virtual": false,
+      "description": "Set $$at attribute",
+      "parameters": [
+        {
+          "name": "at",
+          "type": "Date",
+          "description": "Date data set at",
+          "default": "",
+          "optional": "",
+          "nullable": true
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "seal",
+      "access": "",
+      "virtual": false,
+      "description": "Get seal",
+      "parameters": [],
+      "examples": [],
+      "returns": {
+        "type": "string",
+        "description": ""
+      }
+    },
+    {
+      "name": "seal",
+      "access": "",
+      "virtual": false,
+      "description": "Seal this entity",
+      "parameters": [
+        {
+          "name": "signingKey",
+          "type": "string",
+          "description": "Private key to seal",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": []
+    },
     {
       "name": "create",
       "access": "",

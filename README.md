@@ -82,6 +82,7 @@ const clayEntity = require('clay-entity')
   })
   console.log(entity01)
 }
+
 ```
 
 

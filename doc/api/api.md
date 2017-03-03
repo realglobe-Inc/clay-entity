@@ -6,6 +6,7 @@ Entity class for ClayDB
   + [create(args)](#clay-entity-function-create)
 + [`ClayEntity`](#clay-entity-classes) Class
   + [new ClayEntity(attributes)](#clay-entity-classes-clay-entity-constructor)
+  + [entity.get(name)](#clay-entity-classes-clay-entity-get)
 
 ## Functions
 
@@ -39,6 +40,17 @@ Constructor of ClayEntity class
 | Param | Type | Description |
 | ----- | --- | -------- |
 | attributes | Object | Attributes |
+
+
+<a class='md-heading-link' name="clay-entity-classes-clay-entity-get" ></a>
+
+### entity.get(name) -> `*`
+
+Get entity attribute.
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| name | string | Name of attribute |
 
 
 
