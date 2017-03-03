@@ -94,13 +94,13 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@1.0.0
+# clay-entity@1.0.1
 
 Entity class for ClayDB
 
 + Functions
   + [create(args)](#clay-entity-function-create)
-+ [ClayEntity](clay-entity-classes) Class
++ [`ClayEntity`](#clay-entity-classes) Class
   + [new ClayEntity(attributes)](#clay-entity-classes-clay-entity-constructor)
 
 ## Functions
@@ -119,9 +119,11 @@ Create a ClayEntity instance
 
 <a class='md-heading-link' name="clay-entity-classes"></a>
 
-## ClayEntity Class
+## `ClayEntity` Class
 
 Entity class for ClayDB
+
+
 
 
 <a class='md-heading-link' name="clay-entity-classes-clay-entity-constructor" ></a>
