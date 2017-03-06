@@ -1,22 +1,66 @@
 {
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a Entity instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "Entity",
+        "description": ""
+      }
+    },
+    {
+      "name": "decorate",
+      "access": "",
+      "virtual": false,
+      "description": "Decorate an entity",
+      "parameters": [
+        {
+          "name": "decorate",
+          "type": "Entity",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "DecoratedEntity",
+        "description": ""
+      }
+    }
+  ],
   "classes": [
     {
-      "name": "ClayEntity",
+      "name": "DecoratedEntity",
       "description": "",
       "extends": [],
       "access": "",
       "virtual": false,
       "fires": "",
       "constructor": {
-        "name": "ClayEntity",
-        "description": "Entity class for ClayDB",
+        "name": "DecoratedEntity",
+        "description": "",
         "parameters": [
           {
-            "name": "attributes",
-            "type": "Object",
-            "description": "Attributes",
-            "default": "{}",
-            "optional": true,
+            "name": "entity",
+            "type": "Entity",
+            "description": "Entity to decorate",
+            "default": "",
+            "optional": "",
             "nullable": ""
           }
         ],
@@ -43,130 +87,172 @@
             "type": "*",
             "description": "values"
           }
-        }
-      ]
-    }
-  ],
-  "functions": [
-    {
-      "name": "set",
-      "access": "",
-      "virtual": false,
-      "description": "Set values",
-      "parameters": [
-        {
-          "name": "attributes",
-          "type": "Object",
-          "description": "Attributes to set",
-          "default": "",
-          "optional": "",
-          "nullable": ""
-        }
-      ],
-      "examples": []
-    },
-    {
-      "name": "set",
-      "access": "",
-      "virtual": false,
-      "description": "Get values",
-      "parameters": [
-        {
-          "name": "name",
-          "type": "string",
-          "description": "Name of attribute to set",
-          "default": "",
-          "optional": "",
-          "nullable": ""
         },
         {
-          "name": "value",
-          "type": "*",
-          "description": "Value to set",
-          "default": "",
-          "optional": "",
-          "nullable": ""
-        }
-      ],
-      "examples": []
-    },
-    {
-      "name": "at",
-      "access": "",
-      "virtual": false,
-      "description": "Get $$at attribute",
-      "parameters": [],
-      "examples": [],
-      "returns": {
-        "type": "Date",
-        "description": ""
-      }
-    },
-    {
-      "name": "at",
-      "access": "",
-      "virtual": false,
-      "description": "Set $$at attribute",
-      "parameters": [
+          "name": "set",
+          "access": "",
+          "virtual": false,
+          "description": "Set values",
+          "parameters": [
+            {
+              "name": "attributes",
+              "type": "Object",
+              "description": "Attributes to set",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
+        },
+        {
+          "name": "set",
+          "access": "",
+          "virtual": false,
+          "description": "Get values",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name of attribute to set",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "value",
+              "type": "*",
+              "description": "Value to set",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
         {
           "name": "at",
-          "type": "Date",
-          "description": "Date data set at",
-          "default": "",
-          "optional": "",
-          "nullable": true
-        }
-      ],
-      "examples": []
-    },
-    {
-      "name": "seal",
-      "access": "",
-      "virtual": false,
-      "description": "Get seal",
-      "parameters": [],
-      "examples": [],
-      "returns": {
-        "type": "string",
-        "description": ""
-      }
-    },
-    {
-      "name": "seal",
-      "access": "",
-      "virtual": false,
-      "description": "Seal this entity",
-      "parameters": [
+          "access": "",
+          "virtual": false,
+          "description": "Get $$at attribute",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Date",
+            "description": ""
+          }
+        },
         {
-          "name": "signingKey",
-          "type": "string",
-          "description": "Private key to seal",
-          "default": "",
-          "optional": "",
-          "nullable": ""
+          "name": "at",
+          "access": "",
+          "virtual": false,
+          "description": "Set $$at attribute",
+          "parameters": [
+            {
+              "name": "at",
+              "type": "Date",
+              "description": "Date data set at",
+              "default": "",
+              "optional": "",
+              "nullable": true
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "by",
+          "access": "",
+          "virtual": false,
+          "description": "Get $$by attribute",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": ""
+          }
+        },
+        {
+          "name": "by",
+          "access": "",
+          "virtual": false,
+          "description": "Set $$by attribute",
+          "parameters": [
+            {
+              "name": "by",
+              "type": "string",
+              "description": "Lump id",
+              "default": "",
+              "optional": "",
+              "nullable": true
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "seal",
+          "access": "",
+          "virtual": false,
+          "description": "Get seal",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": ""
+          }
+        },
+        {
+          "name": "seal",
+          "access": "",
+          "virtual": false,
+          "description": "Seal this entity",
+          "parameters": [
+            {
+              "name": "signingKey",
+              "type": "string",
+              "description": "Private key to seal",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
         }
       ],
-      "examples": []
+      "properties": [
+        {
+          "name": "values",
+          "access": "",
+          "virtual": false,
+          "description": "Convert int ovalues",
+          "type": ""
+        }
+      ]
     },
     {
-      "name": "create",
+      "name": "ClayEntity",
+      "description": "",
+      "extends": [],
       "access": "",
       "virtual": false,
-      "description": "Create a ClayEntity instance",
-      "parameters": [
-        {
-          "name": "args",
-          "type": "*",
-          "description": "",
-          "default": "",
-          "optional": "",
-          "nullable": ""
-        }
-      ],
-      "examples": [],
-      "returns": {
-        "type": "ClayEntity",
-        "description": ""
+      "fires": "",
+      "constructor": {
+        "name": "ClayEntity",
+        "description": "Entity class for ClayDB",
+        "parameters": [
+          {
+            "name": "attributes",
+            "type": "Object",
+            "description": "Attributes",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
+        "examples": []
       }
     }
   ]
