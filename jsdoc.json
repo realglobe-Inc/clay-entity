@@ -113,7 +113,7 @@
           "name": "set",
           "access": "",
           "virtual": false,
-          "description": "Get values",
+          "description": "Set value",
           "parameters": [
             {
               "name": "name",
@@ -132,7 +132,11 @@
               "nullable": ""
             }
           ],
-          "examples": []
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
         },
         {
           "name": "at",
@@ -161,7 +165,11 @@
               "nullable": true
             }
           ],
-          "examples": []
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
         },
         {
           "name": "by",
@@ -190,7 +198,11 @@
               "nullable": true
             }
           ],
-          "examples": []
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
         },
         {
           "name": "seal",
@@ -211,7 +223,7 @@
           "description": "Seal this entity",
           "parameters": [
             {
-              "name": "signingKey",
+              "name": "privateKey",
               "type": "string",
               "description": "Private key to seal",
               "default": "",
@@ -219,7 +231,32 @@
               "nullable": ""
             }
           ],
-          "examples": []
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
+        },
+        {
+          "name": "verify",
+          "access": "",
+          "virtual": false,
+          "description": "Verify the entity with public key",
+          "parameters": [
+            {
+              "name": "publicKey",
+              "type": "string",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "boolean",
+            "description": ""
+          }
         }
       ],
       "properties": [
@@ -227,7 +264,7 @@
           "name": "values",
           "access": "",
           "virtual": false,
-          "description": "Convert int ovalues",
+          "description": "Convert into values",
           "type": ""
         }
       ]
