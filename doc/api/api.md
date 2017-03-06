@@ -1,13 +1,13 @@
-# clay-entity@1.0.2
+# clay-entity@1.1.0
 
 Entity class for ClayDB
 
 + Functions
   + [create(args)](#clay-entity-function-create)
   + [decorate(decorate)](#clay-entity-function-decorate)
-+ [ClayEntity](clay-entity-classes) Class
++ [`ClayEntity`](#clay-entity-classes) Class
   + [new ClayEntity(attributes)](#clay-entity-classes-clay-entity-constructor)
-+ [DecoratedEntity](clay-entity-classes) Class
++ [`DecoratedEntity`](#clay-entity-classes) Class
   + [new DecoratedEntity(entity)](#clay-entity-classes-decorated-entity-constructor)
   + [entity.get(name)](#clay-entity-classes-decorated-entity-get)
   + [entity.set(attributes)](#clay-entity-classes-decorated-entity-set)
@@ -45,9 +45,11 @@ Decorate an entity
 
 <a class='md-heading-link' name="clay-entity-classes"></a>
 
-## ClayEntity Class
+## `ClayEntity` Class
 
 Entity class for ClayDB
+
+
 
 
 <a class='md-heading-link' name="clay-entity-classes-clay-entity-constructor" ></a>
@@ -63,7 +65,9 @@ Constructor of ClayEntity class
 
 <a class='md-heading-link' name="clay-entity-classes"></a>
 
-## DecoratedEntity Class
+## `DecoratedEntity` Class
+
+
 
 
 
