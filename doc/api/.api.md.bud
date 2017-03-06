@@ -30,18 +30,21 @@ module.exports = {
         [item.name]: wrapper(item)
       }), {})
       let classes = byName(jsdoc[ 'classes' ], { wrapper: asClass })
-      let { ClayEntity } = classes
+      let { ClayEntity, DecoratedEntity } = classes
 
       let functions = byName(jsdoc[ 'functions' ], { wrapper: asFunc })
       let {
-        create
+        create,
+        decorate
       } = functions
       return {
         classes: [
-          ClayEntity
+          ClayEntity,
+          DecoratedEntity
         ].filter(Boolean),
         functions: [
-          create
+          create,
+          decorate
 
         ].filter(Boolean)
       }
