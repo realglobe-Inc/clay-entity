@@ -6,6 +6,7 @@
 
 const Entity = require('../lib/entity.js')
 const decorate = require('../lib/decorate.js')
+const { generate:generateKeys } = require('clay-crypto')
 const { ok, equal, notEqual, deepEqual } = require('assert')
 const co = require('co')
 
@@ -34,6 +35,17 @@ describe('decorate', function () {
     let { values } = entity
     ok(values.id)
     ok(values.$$at)
+  }))
+
+  it('Seal and verify', () => co(function * () {
+    let entity = decorate(new Entity({
+      foo: 'this is foo'
+    }))
+    let { publicKey, privateKey } = generateKeys()
+    entity.seal(privateKey)
+    ok(entity.verify(publicKey))
+    entity.set({ foo: 'bar' })
+    ok(!entity.verify(publicKey))
   }))
 })
 
