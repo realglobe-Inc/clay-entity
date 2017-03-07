@@ -30,7 +30,7 @@ describe('clay-entity', function () {
 
   it('No id', () => co(function * () {
     let entity = new Entity({ id: false })
-    strictEqual(entity.id, null)
+    strictEqual(entity.id, undefined)
   }))
 })
 
