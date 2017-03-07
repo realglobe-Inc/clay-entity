@@ -95,7 +95,7 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@1.2.0
+# clay-entity@1.2.1
 
 Entity class for ClayDB
 
@@ -114,7 +114,8 @@ Entity class for ClayDB
   + [entity.by()](#clay-entity-classes-decorated-entity-by)
   + [entity.by(by)](#clay-entity-classes-decorated-entity-by)
   + [entity.seal()](#clay-entity-classes-decorated-entity-seal)
-  + [entity.seal(signingKey)](#clay-entity-classes-decorated-entity-seal)
+  + [entity.seal(privateKey)](#clay-entity-classes-decorated-entity-seal)
+  + [entity.verify(publicKey)](#clay-entity-classes-decorated-entity-verify)
 
 ## Functions
 
@@ -204,9 +205,9 @@ Set values
 
 <a class='md-heading-link' name="clay-entity-classes-decorated-entity-set" ></a>
 
-### entity.set(name, value)
+### entity.set(name, value) -> `DecoratedEntity`
 
-Get values
+Set value
 
 | Param | Type | Description |
 | ----- | --- | -------- |
@@ -222,7 +223,7 @@ Get $$at attribute
 
 <a class='md-heading-link' name="clay-entity-classes-decorated-entity-at" ></a>
 
-### entity.at(at)
+### entity.at(at) -> `DecoratedEntity`
 
 Set $$at attribute
 
@@ -239,7 +240,7 @@ Get $$by attribute
 
 <a class='md-heading-link' name="clay-entity-classes-decorated-entity-by" ></a>
 
-### entity.by(by)
+### entity.by(by) -> `DecoratedEntity`
 
 Set $$by attribute
 
@@ -256,13 +257,24 @@ Get seal
 
 <a class='md-heading-link' name="clay-entity-classes-decorated-entity-seal" ></a>
 
-### entity.seal(signingKey)
+### entity.seal(privateKey) -> `DecoratedEntity`
 
 Seal this entity
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| signingKey | string | Private key to seal |
+| privateKey | string | Private key to seal |
+
+
+<a class='md-heading-link' name="clay-entity-classes-decorated-entity-verify" ></a>
+
+### entity.verify(publicKey) -> `boolean`
+
+Verify the entity with public key
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| publicKey | string |  |
 
 
 
