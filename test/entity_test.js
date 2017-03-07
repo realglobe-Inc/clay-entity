@@ -5,7 +5,7 @@
 'use strict'
 
 const Entity = require('../lib/entity.js')
-const { ok, equal, notEqual, deepEqual } = require('assert')
+const { ok, equal, notEqual, deepEqual, strictEqual } = require('assert')
 const co = require('co')
 
 describe('clay-entity', function () {
@@ -26,6 +26,11 @@ describe('clay-entity', function () {
     deepEqual(Object.keys(entity).sort(), [ 'foo', 'id' ])
 
     ok(String(entity))
+  }))
+
+  it('No id', () => co(function * () {
+    let entity = new Entity({ id: false })
+    strictEqual(entity.id, null)
   }))
 })
 
