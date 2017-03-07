@@ -95,7 +95,7 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@1.2.1
+# clay-entity@1.3.0
 
 Entity class for ClayDB
 
@@ -116,6 +116,7 @@ Entity class for ClayDB
   + [entity.seal()](#clay-entity-classes-decorated-entity-seal)
   + [entity.seal(privateKey)](#clay-entity-classes-decorated-entity-seal)
   + [entity.verify(publicKey)](#clay-entity-classes-decorated-entity-verify)
+  + [entity.toValues()](#clay-entity-classes-decorated-entity-toValues)
 
 ## Functions
 
@@ -276,6 +277,12 @@ Verify the entity with public key
 | ----- | --- | -------- |
 | publicKey | string |  |
 
+
+<a class='md-heading-link' name="clay-entity-classes-decorated-entity-toValues" ></a>
+
+### entity.toValues() -> `Object`
+
+Convert into value object
 
 
 
