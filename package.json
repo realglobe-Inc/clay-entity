@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-entity#readme",
   "dependencies": {
+    "asobj": "^1.5.0",
     "clay-constants": "^2.3.2",
     "clay-crypto": "^2.0.1",
     "clay-id": "^2.0.1"
