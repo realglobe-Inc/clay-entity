@@ -257,6 +257,18 @@
             "type": "boolean",
             "description": ""
           }
+        },
+        {
+          "name": "toValues",
+          "access": "",
+          "virtual": false,
+          "description": "Convert into value object",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Object",
+            "description": ""
+          }
         }
       ],
       "properties": [
@@ -264,7 +276,7 @@
           "name": "values",
           "access": "",
           "virtual": false,
-          "description": "Convert into values",
+          "description": "",
           "type": ""
         }
       ]
