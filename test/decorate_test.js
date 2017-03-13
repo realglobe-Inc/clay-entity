@@ -37,6 +37,14 @@ describe('decorate', function () {
     ok(values.$$at)
   }))
 
+  it('Mark as', () => co(function * () {
+    let entity = decorate(new Entity({
+      foo: 'this is foo'
+    }))
+    entity.as('hoge')
+    equal(entity.as(), 'hoge')
+  }))
+
   it('Seal and verify', () => co(function * () {
     let entity = decorate(new Entity({
       foo: 'this is foo'

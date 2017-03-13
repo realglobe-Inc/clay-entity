@@ -238,6 +238,39 @@
           }
         },
         {
+          "name": "as",
+          "access": "",
+          "virtual": false,
+          "description": "Get as",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "As resource name"
+          }
+        },
+        {
+          "name": "as",
+          "access": "",
+          "virtual": false,
+          "description": "Set resource name as as",
+          "parameters": [
+            {
+              "name": "as",
+              "type": "string",
+              "description": "As",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
+        },
+        {
           "name": "verify",
           "access": "",
           "virtual": false,

@@ -95,7 +95,7 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@1.3.0
+# clay-entity@1.4.0
 
 Entity class for ClayDB
 
@@ -115,6 +115,8 @@ Entity class for ClayDB
   + [entity.by(by)](#clay-entity-classes-decorated-entity-by)
   + [entity.seal()](#clay-entity-classes-decorated-entity-seal)
   + [entity.seal(privateKey)](#clay-entity-classes-decorated-entity-seal)
+  + [entity.as()](#clay-entity-classes-decorated-entity-as)
+  + [entity.as(as)](#clay-entity-classes-decorated-entity-as)
   + [entity.verify(publicKey)](#clay-entity-classes-decorated-entity-verify)
   + [entity.toValues()](#clay-entity-classes-decorated-entity-toValues)
 
@@ -265,6 +267,23 @@ Seal this entity
 | Param | Type | Description |
 | ----- | --- | -------- |
 | privateKey | string | Private key to seal |
+
+
+<a class='md-heading-link' name="clay-entity-classes-decorated-entity-as" ></a>
+
+### entity.as() -> `string`
+
+Get as
+
+<a class='md-heading-link' name="clay-entity-classes-decorated-entity-as" ></a>
+
+### entity.as(as) -> `DecoratedEntity`
+
+Set resource name as as
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| as | string | As |
 
 
 <a class='md-heading-link' name="clay-entity-classes-decorated-entity-verify" ></a>
