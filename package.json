@@ -6,7 +6,7 @@
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepare": "node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js"
+    "prepare": "node ./ci/assets.js && node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js"
   },
   "repository": "realglobe-Inc/clay-entity",
   "keywords": [
@@ -37,8 +37,10 @@
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.1.0",
+    "claydb-assets": "^1.0.2",
     "co": "^4.6.0",
     "coz": "^6.0.20",
+    "filecopy": "^3.0.1",
     "injectmock": "^2.0.0",
     "sg-templates": "^1.3.2",
     "sugos-travis": "^2.0.7",
