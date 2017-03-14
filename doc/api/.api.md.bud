@@ -35,7 +35,8 @@ module.exports = {
       let functions = byName(jsdoc[ 'functions' ], { wrapper: asFunc })
       let {
         create,
-        decorate
+        decorate,
+        isEntity
       } = functions
       return {
         classes: [
@@ -44,7 +45,8 @@ module.exports = {
         ].filter(Boolean),
         functions: [
           create,
-          decorate
+          decorate,
+          isEntity
 
         ].filter(Boolean)
       }

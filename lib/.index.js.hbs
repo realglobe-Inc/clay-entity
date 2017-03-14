@@ -7,6 +7,7 @@
 
 const create = require('./create')
 const decorate = require('./decorate')
+const isEntity = require('./is_entity')
 const Entity = require('./entity')
 
 let lib = create.bind(this)
@@ -14,7 +15,8 @@ let lib = create.bind(this)
 Object.assign(lib, Entity, {
   create,
   decorate,
-  Entity
+  Entity,
+  isEntity
 })
 
 module.exports = lib

@@ -41,6 +41,27 @@
         "type": "DecoratedEntity",
         "description": ""
       }
+    },
+    {
+      "name": "isEntity",
+      "access": "",
+      "virtual": false,
+      "description": "Detect a instance is entity or not",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "*",
+          "description": "Object to check",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "boolean",
+        "description": "is entity or not"
+      }
     }
   ],
   "classes": [
@@ -315,14 +336,14 @@
       ]
     },
     {
-      "name": "ClayEntity",
+      "name": "Entity",
       "description": "",
       "extends": [],
       "access": "",
       "virtual": false,
       "fires": "",
       "constructor": {
-        "name": "ClayEntity",
+        "name": "Entity",
         "description": "Entity class for ClayDB",
         "parameters": [
           {
