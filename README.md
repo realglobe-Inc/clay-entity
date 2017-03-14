@@ -95,15 +95,14 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@1.4.0
+# clay-entity@1.5.0
 
 Entity class for ClayDB
 
 + Functions
   + [create(args)](#clay-entity-function-create)
   + [decorate(decorate)](#clay-entity-function-decorate)
-+ [`ClayEntity`](#clay-entity-classes) Class
-  + [new ClayEntity(attributes)](#clay-entity-classes-clay-entity-constructor)
+  + [isEntity(obj)](#clay-entity-function-is-entity)
 + [`DecoratedEntity`](#clay-entity-classes) Class
   + [new DecoratedEntity(entity)](#clay-entity-classes-decorated-entity-constructor)
   + [entity.get(name)](#clay-entity-classes-decorated-entity-get)
@@ -142,26 +141,16 @@ Decorate an entity
 | ----- | --- | -------- |
 | decorate | Entity |  |
 
+<a class='md-heading-link' name="clay-entity-function-is-entity" ></a>
 
+### isEntity(obj) -> `boolean`
 
-<a class='md-heading-link' name="clay-entity-classes"></a>
-
-## `ClayEntity` Class
-
-Entity class for ClayDB
-
-
-
-
-<a class='md-heading-link' name="clay-entity-classes-clay-entity-constructor" ></a>
-
-### new ClayEntity(attributes)
-
-Constructor of ClayEntity class
+Detect a instance is entity or not
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| attributes | Object | Attributes |
+| obj | * | Object to check |
+
 
 
 <a class='md-heading-link' name="clay-entity-classes"></a>
