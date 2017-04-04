@@ -1,4 +1,4 @@
-# clay-entity@1.5.1
+# clay-entity@2.0.0
 
 Entity class for ClayDB
 
@@ -6,21 +6,21 @@ Entity class for ClayDB
   + [create(args)](#clay-entity-function-create)
   + [decorate(decorate)](#clay-entity-function-decorate)
   + [isEntity(obj)](#clay-entity-function-is-entity)
-+ [`DecoratedEntity`](#clay-entity-classes) Class
-  + [new DecoratedEntity(entity)](#clay-entity-classes-decorated-entity-constructor)
-  + [entity.get(name)](#clay-entity-classes-decorated-entity-get)
-  + [entity.set(attributes)](#clay-entity-classes-decorated-entity-set)
-  + [entity.set(name, value)](#clay-entity-classes-decorated-entity-set)
-  + [entity.at()](#clay-entity-classes-decorated-entity-at)
-  + [entity.at(at)](#clay-entity-classes-decorated-entity-at)
-  + [entity.by()](#clay-entity-classes-decorated-entity-by)
-  + [entity.by(by)](#clay-entity-classes-decorated-entity-by)
-  + [entity.seal()](#clay-entity-classes-decorated-entity-seal)
-  + [entity.seal(privateKey)](#clay-entity-classes-decorated-entity-seal)
-  + [entity.as()](#clay-entity-classes-decorated-entity-as)
-  + [entity.as(as)](#clay-entity-classes-decorated-entity-as)
-  + [entity.verify(publicKey)](#clay-entity-classes-decorated-entity-verify)
-  + [entity.toValues()](#clay-entity-classes-decorated-entity-toValues)
++ [`DecoratedEntity`](#clay-entity-class) Class
+  + [new DecoratedEntity(entity)](#clay-entity-class-decorated-entity-constructor)
+  + [entity.get(name)](#clay-entity-class-decorated-entity-get)
+  + [entity.set(attributes)](#clay-entity-class-decorated-entity-set)
+  + [entity.set(name, value)](#clay-entity-class-decorated-entity-set)
+  + [entity.at()](#clay-entity-class-decorated-entity-at)
+  + [entity.at(at)](#clay-entity-class-decorated-entity-at)
+  + [entity.by()](#clay-entity-class-decorated-entity-by)
+  + [entity.by(by)](#clay-entity-class-decorated-entity-by)
+  + [entity.seal()](#clay-entity-class-decorated-entity-seal)
+  + [entity.seal(privateKey)](#clay-entity-class-decorated-entity-seal)
+  + [entity.as()](#clay-entity-class-decorated-entity-as)
+  + [entity.as(as)](#clay-entity-class-decorated-entity-as)
+  + [entity.verify(publicKey)](#clay-entity-class-decorated-entity-verify)
+  + [entity.toValues()](#clay-entity-class-decorated-entity-toValues)
 
 ## Functions
 
@@ -56,7 +56,7 @@ Detect a instance is entity or not
 
 
 
-<a class='md-heading-link' name="clay-entity-classes"></a>
+<a class='md-heading-link' name="clay-entity-class"></a>
 
 ## `DecoratedEntity` Class
 
@@ -65,7 +65,7 @@ Detect a instance is entity or not
 
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-constructor" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-constructor" ></a>
 
 ### new DecoratedEntity(entity)
 
@@ -76,7 +76,7 @@ Constructor of DecoratedEntity class
 | entity | Entity | Entity to decorate |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-get" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-get" ></a>
 
 ### entity.get(name) -> `*`
 
@@ -87,7 +87,7 @@ Get entity attribute.
 | name | string | Name of attribute |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-set" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-set" ></a>
 
 ### entity.set(attributes) -> `DecoratedEntity`
 
@@ -98,7 +98,7 @@ Set values
 | attributes | Object | Attributes to set |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-set" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-set" ></a>
 
 ### entity.set(name, value) -> `DecoratedEntity`
 
@@ -110,13 +110,13 @@ Set value
 | value | * | Value to set |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-at" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-at" ></a>
 
 ### entity.at() -> `Date`
 
 Get $$at attribute
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-at" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-at" ></a>
 
 ### entity.at(at) -> `DecoratedEntity`
 
@@ -127,13 +127,13 @@ Set $$at attribute
 | at | Date | Date data set at |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-by" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-by" ></a>
 
 ### entity.by() -> `string`
 
 Get $$by attribute
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-by" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-by" ></a>
 
 ### entity.by(by) -> `DecoratedEntity`
 
@@ -144,13 +144,13 @@ Set $$by attribute
 | by | string | Lump id |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-seal" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-seal" ></a>
 
 ### entity.seal() -> `string`
 
 Get seal
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-seal" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-seal" ></a>
 
 ### entity.seal(privateKey) -> `DecoratedEntity`
 
@@ -161,13 +161,13 @@ Seal this entity
 | privateKey | string | Private key to seal |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-as" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-as" ></a>
 
 ### entity.as() -> `string`
 
 Get as
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-as" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-as" ></a>
 
 ### entity.as(as) -> `DecoratedEntity`
 
@@ -178,7 +178,7 @@ Set resource name as as
 | as | string | As |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-verify" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-verify" ></a>
 
 ### entity.verify(publicKey) -> `boolean`
 
@@ -189,7 +189,7 @@ Verify the entity with public key
 | publicKey | string |  |
 
 
-<a class='md-heading-link' name="clay-entity-classes-decorated-entity-toValues" ></a>
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-toValues" ></a>
 
 ### entity.toValues() -> `Object`
 
