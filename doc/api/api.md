@@ -1,4 +1,4 @@
-# clay-entity@2.0.0
+# clay-entity@2.0.1
 
 Entity class for ClayDB
 
