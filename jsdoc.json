@@ -122,6 +122,22 @@
               "default": "",
               "optional": "",
               "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            },
+            {
+              "name": "options.allowReserved",
+              "type": "boolean",
+              "description": "Allow to set reserved",
+              "default": false,
+              "optional": true,
+              "nullable": ""
             }
           ],
           "examples": [],
