@@ -6,7 +6,7 @@
 
 const Entity = require('../lib/entity.js')
 const decorate = require('../lib/decorate.js')
-const { generate:generateKeys } = require('clay-crypto')
+const { generate: generateKeys } = require('clay-crypto')
 const { ok, equal, notEqual, deepEqual } = require('assert')
 const co = require('co')
 
@@ -35,6 +35,19 @@ describe('decorate', function () {
     let { values } = entity
     ok(values.id)
     ok(values.$$at)
+
+    {
+      let caught
+      try {
+        entity.set({ id: 1 })
+      } catch (e) {
+        caught = e
+      }
+      ok(caught)
+      notEqual(entity.toValues().id, 1)
+      entity.set({ id: 1 }, { allowReserved: true })
+      equal(entity.toValues().id, 1)
+    }
   }))
 
   it('Mark as', () => co(function * () {
