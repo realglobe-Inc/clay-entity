@@ -27,11 +27,6 @@ describe('decorate', function () {
     entity.set({ foo2: 'this is foo2' })
     entity.set('foo3', 'this is foo3')
     equal(entity.get('foo'), 'this is foo')
-    deepEqual(entity.get(), {
-      foo: 'this is foo',
-      foo2: 'this is foo2',
-      foo3: 'this is foo3'
-    })
     let { values } = entity
     ok(values.id)
     ok(values.$$at)

@@ -98,7 +98,7 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@2.0.1
+# clay-entity@2.0.3
 
 Entity class for ClayDB
 
@@ -109,7 +109,7 @@ Entity class for ClayDB
 + [`DecoratedEntity`](#clay-entity-class) Class
   + [new DecoratedEntity(entity)](#clay-entity-class-decorated-entity-constructor)
   + [entity.get(name)](#clay-entity-class-decorated-entity-get)
-  + [entity.set(attributes)](#clay-entity-class-decorated-entity-set)
+  + [entity.set(attributes, options)](#clay-entity-class-decorated-entity-set)
   + [entity.set(name, value)](#clay-entity-class-decorated-entity-set)
   + [entity.at()](#clay-entity-class-decorated-entity-at)
   + [entity.at(at)](#clay-entity-class-decorated-entity-at)
@@ -189,13 +189,15 @@ Get entity attribute.
 
 <a class='md-heading-link' name="clay-entity-class-decorated-entity-set" ></a>
 
-### entity.set(attributes) -> `DecoratedEntity`
+### entity.set(attributes, options) -> `DecoratedEntity`
 
 Set values
 
 | Param | Type | Description |
 | ----- | --- | -------- |
 | attributes | Object | Attributes to set |
+| options | Object | Optional settings |
+| options.allowReserved | boolean | Allow to set reserved |
 
 
 <a class='md-heading-link' name="clay-entity-class-decorated-entity-set" ></a>
