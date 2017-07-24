@@ -1,6 +1,6 @@
 {
   "name": "clay-entity",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "Entity class for ClayDB",
   "browser": "shim/browser",
   "main": "lib",
@@ -24,13 +24,13 @@
   "homepage": "https://github.com/realglobe-Inc/clay-entity#readme",
   "dependencies": {
     "asobj": "^1.5.0",
-    "clay-constants": "^3.0.1",
+    "clay-constants": "^3.0.3",
     "clay-crypto": "^4.0.1",
-    "clay-id": "^3.0.1"
+    "clay-id": "^3.0.2"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
-    "ababel-es2015": "^2.0.1",
+    "ababel": "^2.0.2",
+    "ababel-es2015": "^2.0.2",
     "amocha": "^2.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",

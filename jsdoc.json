@@ -113,6 +113,35 @@
           "name": "set",
           "access": "",
           "virtual": false,
+          "description": "Set value",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name of attribute to set",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "value",
+              "type": "*",
+              "description": "Value to set",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
+        },
+        {
+          "name": "set",
+          "access": "",
+          "virtual": false,
           "description": "Set values",
           "parameters": [
             {
@@ -147,47 +176,6 @@
           }
         },
         {
-          "name": "set",
-          "access": "",
-          "virtual": false,
-          "description": "Set value",
-          "parameters": [
-            {
-              "name": "name",
-              "type": "string",
-              "description": "Name of attribute to set",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "value",
-              "type": "*",
-              "description": "Value to set",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "DecoratedEntity",
-            "description": "Returns this"
-          }
-        },
-        {
-          "name": "at",
-          "access": "",
-          "virtual": false,
-          "description": "Get $$at attribute",
-          "parameters": [],
-          "examples": [],
-          "returns": {
-            "type": "Date",
-            "description": ""
-          }
-        },
-        {
           "name": "at",
           "access": "",
           "virtual": false,
@@ -209,14 +197,14 @@
           }
         },
         {
-          "name": "by",
+          "name": "at",
           "access": "",
           "virtual": false,
-          "description": "Get $$by attribute",
+          "description": "Get $$at attribute",
           "parameters": [],
           "examples": [],
           "returns": {
-            "type": "string",
+            "type": "Date",
             "description": ""
           }
         },
@@ -242,10 +230,10 @@
           }
         },
         {
-          "name": "seal",
+          "name": "by",
           "access": "",
           "virtual": false,
-          "description": "Get seal",
+          "description": "Get $$by attribute",
           "parameters": [],
           "examples": [],
           "returns": {
@@ -275,15 +263,15 @@
           }
         },
         {
-          "name": "as",
+          "name": "seal",
           "access": "",
           "virtual": false,
-          "description": "Get as",
+          "description": "Get seal",
           "parameters": [],
           "examples": [],
           "returns": {
             "type": "string",
-            "description": "As resource name"
+            "description": ""
           }
         },
         {
@@ -305,6 +293,51 @@
           "returns": {
             "type": "DecoratedEntity",
             "description": "Returns this"
+          }
+        },
+        {
+          "name": "as",
+          "access": "",
+          "virtual": false,
+          "description": "Get as",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "As resource name"
+          }
+        },
+        {
+          "name": "num",
+          "access": "",
+          "virtual": false,
+          "description": "Set entity number as num",
+          "parameters": [
+            {
+              "name": "num",
+              "type": "string",
+              "description": "As",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "DecoratedEntity",
+            "description": "Returns this"
+          }
+        },
+        {
+          "name": "num",
+          "access": "",
+          "virtual": false,
+          "description": "Get num",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "As resource name"
           }
         },
         {
