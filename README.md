@@ -119,6 +119,8 @@ Entity class for ClayDB
   + [entity.seal()](#clay-entity-class-decorated-entity-seal)
   + [entity.as(as)](#clay-entity-class-decorated-entity-as)
   + [entity.as()](#clay-entity-class-decorated-entity-as)
+  + [entity.num(num)](#clay-entity-class-decorated-entity-num)
+  + [entity.num()](#clay-entity-class-decorated-entity-num)
   + [entity.verify(publicKey)](#clay-entity-class-decorated-entity-verify)
   + [entity.toValues()](#clay-entity-class-decorated-entity-toValues)
 
@@ -279,6 +281,23 @@ Set resource name as as
 ### entity.as() -> `string`
 
 Get as
+
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-num" ></a>
+
+### entity.num(num) -> `DecoratedEntity`
+
+Set entity number as num
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| num | string | As |
+
+
+<a class='md-heading-link' name="clay-entity-class-decorated-entity-num" ></a>
+
+### entity.num() -> `string`
+
+Get num
 
 <a class='md-heading-link' name="clay-entity-class-decorated-entity-verify" ></a>
 
