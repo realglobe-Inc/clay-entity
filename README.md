@@ -98,7 +98,7 @@ const clayEntity = require('clay-entity')
 API
 ---------
 
-# clay-entity@2.1.0
+# clay-entity@2.1.1
 
 Entity class for ClayDB
 
