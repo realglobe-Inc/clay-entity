@@ -23,28 +23,28 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-entity#readme",
   "dependencies": {
-    "asobj": "^1.5.0",
-    "clay-constants": "^3.1.1",
+    "asobj": "^2.0.5",
+    "clay-constants": "^3.4.4",
     "clay-crypto": "^4.0.1",
     "clay-id": "^3.0.2"
   },
   "devDependencies": {
-    "ababel": "^2.0.2",
+    "ababel": "^3.0.2",
     "ababel-es2015": "^2.0.2",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.0",
+    "ape-tmpl": "^6.0.8",
     "ape-updating": "^4.1.1",
     "claydb-assets": "^2.0.3",
     "co": "^4.6.0",
     "coz": "^6.0.20",
-    "filecopy": "^3.0.1",
+    "filecopy": "^4.0.0",
     "injectmock": "^2.0.0",
     "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",
-    "writeout": "^2.2.0"
+    "writeout": "^2.2.1"
   },
   "engines": {
     "node": ">=6",
