@@ -33,6 +33,11 @@ describe('clay-entity', function () {
     strictEqual(entity.id, undefined)
   }))
 
+  it('Serialized', () => co(function * () {
+    const entity = new Entity({id: '123'})
+    equal(typeof JSON.parse(JSON.stringify(entity)).id, 'string')
+  }))
+
   // https://github.com/realglobe-Inc/claydb/issues/11
   it('Keep $$entity after json', () => co(function * () {
     const entity = new Entity({id: false})

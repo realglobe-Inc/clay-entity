@@ -29,7 +29,7 @@
     "clay-id": "^3.0.2"
   },
   "devDependencies": {
-    "ababel": "^5.0.3",
+    "ababel": "^5.0.5",
     "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
