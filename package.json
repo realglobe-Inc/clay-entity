@@ -29,10 +29,10 @@
     "clay-id": "^3.0.2"
   },
   "devDependencies": {
-    "ababel": "^5.0.5",
+    "ababel": "^5.0.6",
     "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
-    "ape-releasing": "^4.0.4",
+    "ape-releasing": "^5.0.0",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^6.0.11",
     "ape-updating": "^5.0.1",
