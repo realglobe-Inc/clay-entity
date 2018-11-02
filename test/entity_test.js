@@ -5,7 +5,7 @@
 'use strict'
 
 const Entity = require('../lib/entity.js')
-const {ok, equal, notEqual, deepEqual, strictEqual} = require('assert')
+const { ok, equal, notEqual, deepEqual, strictEqual } = require('assert')
 const co = require('co')
 
 describe('clay-entity', function () {
@@ -23,24 +23,24 @@ describe('clay-entity', function () {
     const entity = new Entity({
       foo: 'bar'
     })
-    deepEqual(Object.keys(entity).sort(), ['foo', 'id'])
+    deepEqual(Object.keys(entity).sort(), ['$$entity', 'foo', 'id'])
 
     ok(String(entity))
   }))
 
   it('No id', () => co(function * () {
-    const entity = new Entity({id: false})
+    const entity = new Entity({ id: false })
     strictEqual(entity.id, undefined)
   }))
 
   it('Serialized', () => co(function * () {
-    const entity = new Entity({id: '123'})
+    const entity = new Entity({ id: '123' })
     equal(typeof JSON.parse(JSON.stringify(entity)).id, 'string')
   }))
 
   // https://github.com/realglobe-Inc/claydb/issues/11
   it('Keep $$entity after json', () => co(function * () {
-    const entity = new Entity({id: false})
+    const entity = new Entity({ id: false })
     const entityOnceJSON = JSON.parse(JSON.stringify(entity))
     ok(entityOnceJSON.$$entity)
   }))
