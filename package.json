@@ -1,6 +1,6 @@
 {
   "name": "clay-entity",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "Entity class for ClayDB",
   "browser": "shim/browser",
   "main": "lib",
