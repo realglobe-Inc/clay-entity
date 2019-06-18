@@ -25,8 +25,8 @@
   "dependencies": {
     "asobj": "^3.0.1",
     "clay-constants": "^3.5.1",
-    "clay-crypto": "^4.0.4",
-    "clay-id": "^3.0.4"
+    "clay-crypto": "^4.0.5",
+    "clay-id": "^3.1.1"
   },
   "devDependencies": {
     "ababel": "^6.0.0",
