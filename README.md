@@ -93,12 +93,12 @@ const clayEntity = require('clay-entity')
 
 <!-- Section from "doc/guides/03.API.md.hbs" Start -->
 
-<a name="section-doc-guides-03-a-p-i-md"></a>
+<a name="section-doc-guides-03-api-md"></a>
 
 API
 ---------
 
-# clay-entity@2.1.8
+# clay-entity@2.1.9
 
 Entity class for ClayDB
 
